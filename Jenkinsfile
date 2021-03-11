@@ -15,6 +15,11 @@ pipeline {
       steps {
         echo 'Deploying the application..'
       }
+    }
+    stage("trigger") {
+      steps {
+        echo 'triggering the application..'
+      }
     }  
   }
 }
